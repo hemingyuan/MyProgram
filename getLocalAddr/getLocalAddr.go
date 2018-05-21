@@ -5,7 +5,7 @@ import (
 	"net"
 )
 
-// GetLocalAddr get local ip address list
+// GetLocalAddr return local ip address list
 func GetLocalAddr() (result []string) {
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
